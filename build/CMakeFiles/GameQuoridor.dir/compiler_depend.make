@@ -283,8 +283,52 @@ CMakeFiles/GameQuoridor.dir/src/Main.cpp.o: ../src/Main.cpp \
   /usr/include/SFML/Graphics/Glsl.inl \
   /usr/include/SFML/Graphics/Sprite.hpp \
   /usr/include/SFML/Graphics/Text.hpp \
-  /usr/include/SFML/Graphics/VertexBuffer.hpp
+  /usr/include/SFML/Graphics/VertexBuffer.hpp \
+  /usr/include/SFML/Audio.hpp \
+  /usr/include/SFML/Audio/InputSoundFile.hpp \
+  /usr/include/SFML/Audio/Export.hpp \
+  /usr/include/SFML/Audio/Listener.hpp \
+  /usr/include/SFML/Audio/Music.hpp \
+  /usr/include/SFML/Audio/SoundStream.hpp \
+  /usr/include/SFML/Audio/SoundSource.hpp \
+  /usr/include/SFML/Audio/AlResource.hpp \
+  /usr/include/SFML/Audio/OutputSoundFile.hpp \
+  /usr/include/SFML/Audio/Sound.hpp \
+  /usr/include/SFML/Audio/SoundBuffer.hpp \
+  /usr/include/c++/11/set \
+  /usr/include/c++/11/bits/stl_set.h \
+  /usr/include/c++/11/bits/stl_multiset.h \
+  /usr/include/SFML/Audio/SoundBufferRecorder.hpp \
+  /usr/include/SFML/Audio/SoundRecorder.hpp \
+  /usr/include/SFML/Audio/SoundFileFactory.hpp \
+  /usr/include/SFML/Audio/SoundFileFactory.inl \
+  /usr/include/SFML/Audio/SoundFileReader.hpp \
+  /usr/include/SFML/Audio/SoundFileWriter.hpp
 
+
+/usr/include/SFML/Audio/SoundFileReader.hpp:
+
+/usr/include/SFML/Audio/SoundRecorder.hpp:
+
+/usr/include/SFML/Audio/SoundBufferRecorder.hpp:
+
+/usr/include/c++/11/bits/stl_multiset.h:
+
+/usr/include/c++/11/set:
+
+/usr/include/SFML/Audio/SoundBuffer.hpp:
+
+/usr/include/SFML/Audio/Sound.hpp:
+
+/usr/include/SFML/Audio/OutputSoundFile.hpp:
+
+/usr/include/SFML/Audio/AlResource.hpp:
+
+/usr/include/SFML/Audio/SoundStream.hpp:
+
+/usr/include/SFML/Audio/Music.hpp:
+
+/usr/include/SFML/Audio/Listener.hpp:
 
 /usr/include/SFML/Graphics/VertexBuffer.hpp:
 
@@ -342,6 +386,8 @@ CMakeFiles/GameQuoridor.dir/src/Main.cpp.o: ../src/Main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
+/usr/include/c++/11/bits/stl_set.h:
+
 /usr/include/SFML/Window/Window.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
@@ -382,11 +428,17 @@ CMakeFiles/GameQuoridor.dir/src/Main.cpp.o: ../src/Main.cpp \
 
 /usr/include/SFML/Graphics/Export.hpp:
 
+/usr/include/SFML/Audio/Export.hpp:
+
 /usr/include/c++/11/bits/localefwd.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
+/usr/include/SFML/Audio/SoundFileFactory.hpp:
+
 /usr/include/c++/11/cctype:
+
+/usr/include/SFML/Audio/SoundSource.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -449,6 +501,8 @@ CMakeFiles/GameQuoridor.dir/src/Main.cpp.o: ../src/Main.cpp \
 /usr/include/ctype.h:
 
 /usr/include/c++/11/locale:
+
+/usr/include/SFML/Audio.hpp:
 
 /usr/include/SFML/System/ThreadLocalPtr.inl:
 
@@ -632,6 +686,8 @@ CMakeFiles/GameQuoridor.dir/src/Main.cpp.o: ../src/Main.cpp \
 
 /usr/include/c++/11/bits/exception_defines.h:
 
+/usr/include/SFML/Audio/SoundFileWriter.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
 /usr/include/SFML/Graphics/CircleShape.hpp:
@@ -651,6 +707,8 @@ CMakeFiles/GameQuoridor.dir/src/Main.cpp.o: ../src/Main.cpp \
 /usr/include/c++/11/streambuf:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+
+/usr/include/SFML/Audio/SoundFileFactory.inl:
 
 /usr/include/c++/11/iosfwd:
 
@@ -719,6 +777,8 @@ CMakeFiles/GameQuoridor.dir/src/Main.cpp.o: ../src/Main.cpp \
 /usr/include/asm-generic/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/SFML/Audio/InputSoundFile.hpp:
 
 /usr/include/c++/11/bits/charconv.h:
 
