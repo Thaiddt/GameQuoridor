@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/GameQuoridor.dir/src/Main.cpp.o -o GameQuoridor  -lsfml-system -lsfml-window -lsfml-graphics -lsfml-network -lsfml-audio 

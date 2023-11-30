@@ -1,0 +1,3 @@
+/home/thai/Desktop/GameQuoridor/build/CMakeFiles/GameQuoridor.dir
+/home/thai/Desktop/GameQuoridor/build/CMakeFiles/edit_cache.dir
+/home/thai/Desktop/GameQuoridor/build/CMakeFiles/rebuild_cache.dir
