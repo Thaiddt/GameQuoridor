@@ -1,21 +1,32 @@
 #pragma once
-
-#include <SFML/Network.hpp>
+#include <iostream>
+#include <thread>
 #include <vector>
-#include <string>
+#include <chrono>
+#include <string.h>
+#include <SFML/Network.hpp>
 
-class NetworkUtilsServer {
-public:
-    NetworkUtilsServer();
-    ~NetworkUtilsServer();
+#define MAX_RAW_DATA 256 // Max bytes supported on Raw Data mode
 
-    bool startServer(unsigned short port);
-    void handleConnections();
-    void sendMessage(sf::TcpSocket& clientSocket, const std::string& message);
-    std::string receiveMessage(sf::TcpSocket& clientSocket);
-    void disconnectClient(sf::TcpSocket& clientSocket);
+#define logl(x) std::cout << x << std::endl
+#define log(x) std::cout << x
 
-private:
+class NetworkUtilsServer
+{
     sf::TcpListener listener;
-    std::vector<sf::TcpSocket> connectedClients;
+    std::vector<sf::TcpSocket *> client_array;
+
+    unsigned short listen_port;
+
+public:
+    NetworkUtilsServer(unsigned short);
+    void ConnectClients(std::vector<sf::TcpSocket *> *);
+    void DisconnectClient(sf::TcpSocket *, size_t);
+
+    void ReceivePacket(sf::TcpSocket *, size_t);
+
+    void BroadcastPacket(sf::Packet &, sf::IpAddress, unsigned short);
+
+    void ManagePackets();
+    void Run();
 };

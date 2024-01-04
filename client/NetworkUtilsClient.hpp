@@ -1,18 +1,23 @@
 #pragma once
-
+#include <iostream>
+#include <thread>
+#include <chrono>
 #include <SFML/Network.hpp>
-#include <string>
+#include "GameManager.hpp"
 
-class NetworkUtilsClient {
+#define logl(x) std::cout << x << std::endl
+#define log(x) std::cout << x
+
+class NetworkUtilsClient{
+    sf::TcpSocket socket;
+    sf::Packet last_packet;
+
+    bool isConnected = false;
 public:
     NetworkUtilsClient();
-    ~NetworkUtilsClient();
-
-    bool connectToServer(const std::string& serverAddress, unsigned short port);
-    void sendMessage(const std::string& message);
-    std::string receiveMessage();
-    void disconnect();
-
-private:
-    sf::TcpSocket socket;
+    void Connect(const char *, unsigned short);
+    void ReceivePackets(sf::TcpSocket *);
+    void SendPacket(sf::Packet &);
+    void Disconnected();
+    void Run();
 };

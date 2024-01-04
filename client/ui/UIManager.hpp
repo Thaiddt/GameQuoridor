@@ -1,25 +1,30 @@
 #pragma once
-
 #include <SFML/Graphics.hpp>
-#include "LoginScreen.hpp"
-#include "LobbyScreen.hpp"
-#include "GameScreen.hpp"
+
+enum class Screen {
+    None,
+    Login,
+    Lobby,
+    Game
+};
 
 class UIManager {
 public:
     UIManager();
+    sf::RenderWindow& GetLoginScreen();
+    sf::RenderWindow& GetLobbyScreen();
+    sf::RenderWindow& GetGameScreen();
 
-    void initialize();
-    void update();
-    void draw();
+    void ShowLoginScreen();
+    void ShowLobbyScreen();
+    void ShowGameScreen();
+    void HideAllScreens();
 
-    // Các phương thức khác cần thiết
+    Screen GetCurrentScreen() const;
 
 private:
-    sf::RenderWindow window;
-    LoginScreen loginScreen;
-    LobbyScreen lobbyScreen;
-    GameScreen gameScreen;
-
-    // Các trạng thái và biến khác cho quản lý giao diện người dùng
+    sf::RenderWindow loginScreen;
+    sf::RenderWindow lobbyScreen;
+    sf::RenderWindow gameScreen;
+    Screen currentScreen;
 };
