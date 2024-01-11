@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "string": "cpp",
+        "internet": "cpp",
+        "typeinfo": "cpp",
+        "ostream": "cpp",
+        "vector": "cpp",
+        "chrono": "cpp"
+    }
+}

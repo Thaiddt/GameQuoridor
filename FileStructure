@@ -1,0 +1,31 @@
+client
+     assets
+     controller
+          LoginController.cpp
+                 #include "LoginController.h"
+          LoginController.h
+                 #include "view/LoginUI.h"
+                 #include "model/User.h"
+          MainController.cpp
+                 #include "MainController.h"
+          MainController.h
+                #include "network/ClientNetwork.h"
+                #include "LoginController.h"
+    model
+          User.cpp
+                #include "User.h"
+          User.h
+     network
+           ClientNetwork.cpp
+                 #include "ClientNetwork.h"
+           ClietnNetwork.h
+                 #include <SFML/Network.hpp>
+      view
+            LoginUI.cpp
+                 #include "LoginUI.h"
+            LoginUI.h
+                 #include <iostream>
+                 #include <SFML/Graphics.hpp>
+                 #include <vector>
+     Client.cpp
+            #include "controller/MainController.h"
